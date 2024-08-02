@@ -2293,7 +2293,9 @@
                             ).value,
                             {
                                 name: Text(ThisRecord.name),
-                                webUrl: Text(ThisRecord.webUrl)
+                                webUrl: Text(ThisRecord.webUrl),
+                                lastModifiedDateTime: DateTimeValue(ThisRecord.lastModifiedDateTime),
+                                lastModifiedBy: Text(ThisRecord.lastModifiedBy.user.displayName)
                             }
                         )
                     );
