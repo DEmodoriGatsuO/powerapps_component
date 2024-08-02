@@ -23,6 +23,15 @@ This repository contains the YAML source code for the `cmp_file_uploader` compon
 - `static_icon_table`: Table defining file types and extensions (Input)
 - `response`: Custom property for responses (Output)
 
+### Reference
+- [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) - https://developer.microsoft.com/en-us/graph/graph-explorer
+- [Power Apps DIRECTLY upload files to SharePoint Document Library | GRAPH API](https://youtu.be/n3mhe88BI34?si=xtlIrg0u84fLQP-Q) - https://youtu.be/n3mhe88BI34?si=xtlIrg0u84fLQP-Q
+- [Error、IfError、IsError、IsBlankOrError 関数](https://learn.microsoft.com/ja-jp/power-platform/power-fx/reference/function-iferror) - https://learn.microsoft.com/ja-jp/power-platform/power-fx/reference/function-iferror
+- [Office 365 Groups](https://learn.microsoft.com/ja-jp/connectors/office365groups/) - https://learn.microsoft.com/ja-jp/connectors/office365groups/
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/n3mhe88BI34?si=xtlIrg0u84fLQP-Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
 ### Children
 
 1. **Container: `con_component`**
