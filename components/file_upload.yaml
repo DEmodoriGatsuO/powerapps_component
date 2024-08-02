@@ -1,0 +1,2536 @@
+- cmp_file_uploader:
+    Control: Component
+    Properties:
+      drive_id: ="{SharePoint drive id}"
+      folder_name: ="{folder_name}"
+      site_id: ="{SharePoint site id}"
+      static_icon_table: |-
+        =Table(
+            {
+                FileType: "accdb",
+                Extention: "accdb"
+            },
+            {
+                FileType: "accdb",
+                Extention: "mdb"
+            },
+            {
+                FileType: "archive",
+                Extention: "7z"
+            },
+            {
+                FileType: "archive",
+                Extention: "ace"
+            },
+            {
+                FileType: "archive",
+                Extention: "arc"
+            },
+            {
+                FileType: "archive",
+                Extention: "arj"
+            },
+            {
+                FileType: "archive",
+                Extention: "dmg"
+            },
+            {
+                FileType: "archive",
+                Extention: "gz"
+            },
+            {
+                FileType: "archive",
+                Extention: "iso"
+            },
+            {
+                FileType: "archive",
+                Extention: "lzh"
+            },
+            {
+                FileType: "archive",
+                Extention: "pkg"
+            },
+            {
+                FileType: "archive",
+                Extention: "rar"
+            },
+            {
+                FileType: "archive",
+                Extention: "sit"
+            },
+            {
+                FileType: "archive",
+                Extention: "tgz"
+            },
+            {
+                FileType: "archive",
+                Extention: "tar"
+            },
+            {
+                FileType: "archive",
+                Extention: "z"
+            },
+            {
+                FileType: "audio",
+                Extention: "aif"
+            },
+            {
+                FileType: "audio",
+                Extention: "aiff"
+            },
+            {
+                FileType: "audio",
+                Extention: "aac"
+            },
+            {
+                FileType: "audio",
+                Extention: "alac"
+            },
+            {
+                FileType: "audio",
+                Extention: "amr"
+            },
+            {
+                FileType: "audio",
+                Extention: "ape"
+            },
+            {
+                FileType: "audio",
+                Extention: "au"
+            },
+            {
+                FileType: "audio",
+                Extention: "awb"
+            },
+            {
+                FileType: "audio",
+                Extention: "dct"
+            },
+            {
+                FileType: "audio",
+                Extention: "dss"
+            },
+            {
+                FileType: "audio",
+                Extention: "dvf"
+            },
+            {
+                FileType: "audio",
+                Extention: "flac"
+            },
+            {
+                FileType: "audio",
+                Extention: "gsm"
+            },
+            {
+                FileType: "audio",
+                Extention: "m4a"
+            },
+            {
+                FileType: "audio",
+                Extention: "m4p"
+            },
+            {
+                FileType: "audio",
+                Extention: "mid"
+            },
+            {
+                FileType: "audio",
+                Extention: "mmf"
+            },
+            {
+                FileType: "audio",
+                Extention: "mp3"
+            },
+            {
+                FileType: "audio",
+                Extention: "oga"
+            },
+            {
+                FileType: "audio",
+                Extention: "ra"
+            },
+            {
+                FileType: "audio",
+                Extention: "rm"
+            },
+            {
+                FileType: "audio",
+                Extention: "wav"
+            },
+            {
+                FileType: "audio",
+                Extention: "wma"
+            },
+            {
+                FileType: "audio",
+                Extention: "wv"
+            },
+            {
+                FileType: "calendar",
+                Extention: "ical"
+            },
+            {
+                FileType: "calendar",
+                Extention: "icalendar"
+            },
+            {
+                FileType: "calendar",
+                Extention: "ics"
+            },
+            {
+                FileType: "calendar",
+                Extention: "ifb"
+            },
+            {
+                FileType: "calendar",
+                Extention: "vcs"
+            },
+            {
+                FileType: "classifier",
+                Extention: "classifier"
+            },
+            {
+                FileType: "clipchamp",
+                Extention: "clipchamp"
+            },
+            {
+                FileType: "code",
+                Extention: "abap"
+            },
+            {
+                FileType: "code",
+                Extention: "ada"
+            },
+            {
+                FileType: "code",
+                Extention: "adp"
+            },
+            {
+                FileType: "code",
+                Extention: "ahk"
+            },
+            {
+                FileType: "code",
+                Extention: "as"
+            },
+            {
+                FileType: "code",
+                Extention: "as3"
+            },
+            {
+                FileType: "code",
+                Extention: "asc"
+            },
+            {
+                FileType: "code",
+                Extention: "ascx"
+            },
+            {
+                FileType: "code",
+                Extention: "asm"
+            },
+            {
+                FileType: "code",
+                Extention: "asp"
+            },
+            {
+                FileType: "code",
+                Extention: "awk"
+            },
+            {
+                FileType: "code",
+                Extention: "bash"
+            },
+            {
+                FileType: "code",
+                Extention: "bash_login"
+            },
+            {
+                FileType: "code",
+                Extention: "bash_logout"
+            },
+            {
+                FileType: "code",
+                Extention: "bash_profile"
+            },
+            {
+                FileType: "code",
+                Extention: "bashrc"
+            },
+            {
+                FileType: "code",
+                Extention: "bat"
+            },
+            {
+                FileType: "code",
+                Extention: "bib"
+            },
+            {
+                FileType: "code",
+                Extention: "bsh"
+            },
+            {
+                FileType: "code",
+                Extention: "build"
+            },
+            {
+                FileType: "code",
+                Extention: "builder"
+            },
+            {
+                FileType: "code",
+                Extention: "c"
+            },
+            {
+                FileType: "code",
+                Extention: "cbl"
+            },
+            {
+                FileType: "code",
+                Extention: "c++"
+            },
+            {
+                FileType: "code",
+                Extention: "capfile"
+            },
+            {
+                FileType: "code",
+                Extention: "cc"
+            },
+            {
+                FileType: "code",
+                Extention: "cfc"
+            },
+            {
+                FileType: "code",
+                Extention: "cfm"
+            },
+            {
+                FileType: "code",
+                Extention: "cfml"
+            },
+            {
+                FileType: "code",
+                Extention: "cl"
+            },
+            {
+                FileType: "code",
+                Extention: "clj"
+            },
+            {
+                FileType: "code",
+                Extention: "cls"
+            },
+            {
+                FileType: "code",
+                Extention: "cmake"
+            },
+            {
+                FileType: "code",
+                Extention: "cmd"
+            },
+            {
+                FileType: "code",
+                Extention: "coffee"
+            },
+            {
+                FileType: "code",
+                Extention: "config"
+            },
+            {
+                FileType: "code",
+                Extention: "cpp"
+            },
+            {
+                FileType: "code",
+                Extention: "cpt"
+            },
+            {
+                FileType: "code",
+                Extention: "cpy"
+            },
+            {
+                FileType: "code",
+                Extention: "cs"
+            },
+            {
+                FileType: "code",
+                Extention: "cshtml"
+            },
+            {
+                FileType: "code",
+                Extention: "cson"
+            },
+            {
+                FileType: "code",
+                Extention: "csproj"
+            },
+            {
+                FileType: "code",
+                Extention: "css"
+            },
+            {
+                FileType: "code",
+                Extention: "ctp"
+            },
+            {
+                FileType: "code",
+                Extention: "cxx"
+            },
+            {
+                FileType: "code",
+                Extention: "d"
+            },
+            {
+                FileType: "code",
+                Extention: "ddl"
+            },
+            {
+                FileType: "code",
+                Extention: "di"
+            },
+            {
+                FileType: "code",
+                Extention: "disco"
+            },
+            {
+                FileType: "code",
+                Extention: "dml"
+            },
+            {
+                FileType: "code",
+                Extention: "dtd"
+            },
+            {
+                FileType: "code",
+                Extention: "dtml"
+            },
+            {
+                FileType: "code",
+                Extention: "el"
+            },
+            {
+                FileType: "code",
+                Extention: "emakefile"
+            },
+            {
+                FileType: "code",
+                Extention: "erb"
+            },
+            {
+                FileType: "code",
+                Extention: "erl"
+            },
+            {
+                FileType: "code",
+                Extention: "f"
+            },
+            {
+                FileType: "code",
+                Extention: "f90"
+            },
+            {
+                FileType: "code",
+                Extention: "f95"
+            },
+            {
+                FileType: "code",
+                Extention: "fs"
+            },
+            {
+                FileType: "code",
+                Extention: "fsi"
+            },
+            {
+                FileType: "code",
+                Extention: "fsscript"
+            },
+            {
+                FileType: "code",
+                Extention: "fsx"
+            },
+            {
+                FileType: "code",
+                Extention: "gemfile"
+            },
+            {
+                FileType: "code",
+                Extention: "gemspec"
+            },
+            {
+                FileType: "code",
+                Extention: "gitconfig"
+            },
+            {
+                FileType: "code",
+                Extention: "go"
+            },
+            {
+                FileType: "code",
+                Extention: "groovy"
+            },
+            {
+                FileType: "code",
+                Extention: "gvy"
+            },
+            {
+                FileType: "code",
+                Extention: "h"
+            },
+            {
+                FileType: "code",
+                Extention: "h++"
+            },
+            {
+                FileType: "code",
+                Extention: "haml"
+            },
+            {
+                FileType: "code",
+                Extention: "handlebars"
+            },
+            {
+                FileType: "code",
+                Extention: "hbs"
+            },
+            {
+                FileType: "code",
+                Extention: "hcp"
+            },
+            {
+                FileType: "code",
+                Extention: "hh"
+            },
+            {
+                FileType: "code",
+                Extention: "hpp"
+            },
+            {
+                FileType: "code",
+                Extention: "hrl"
+            },
+            {
+                FileType: "code",
+                Extention: "hs"
+            },
+            {
+                FileType: "code",
+                Extention: "htc"
+            },
+            {
+                FileType: "code",
+                Extention: "hxx"
+            },
+            {
+                FileType: "code",
+                Extention: "idl"
+            },
+            {
+                FileType: "code",
+                Extention: "iim"
+            },
+            {
+                FileType: "code",
+                Extention: "inc"
+            },
+            {
+                FileType: "code",
+                Extention: "inf"
+            },
+            {
+                FileType: "code",
+                Extention: "ini"
+            },
+            {
+                FileType: "code",
+                Extention: "inl"
+            },
+            {
+                FileType: "code",
+                Extention: "ipp"
+            },
+            {
+                FileType: "code",
+                Extention: "irbrc"
+            },
+            {
+                FileType: "code",
+                Extention: "jade"
+            },
+            {
+                FileType: "code",
+                Extention: "jav"
+            },
+            {
+                FileType: "code",
+                Extention: "java"
+            },
+            {
+                FileType: "code",
+                Extention: "js"
+            },
+            {
+                FileType: "code",
+                Extention: "json"
+            },
+            {
+                FileType: "code",
+                Extention: "jsp"
+            },
+            {
+                FileType: "code",
+                Extention: "jsproj"
+            },
+            {
+                FileType: "code",
+                Extention: "jsx"
+            },
+            {
+                FileType: "code",
+                Extention: "l"
+            },
+            {
+                FileType: "code",
+                Extention: "less"
+            },
+            {
+                FileType: "code",
+                Extention: "lhs"
+            },
+            {
+                FileType: "code",
+                Extention: "lisp"
+            },
+            {
+                FileType: "code",
+                Extention: "log"
+            },
+            {
+                FileType: "code",
+                Extention: "lst"
+            },
+            {
+                FileType: "code",
+                Extention: "ltx"
+            },
+            {
+                FileType: "code",
+                Extention: "lua"
+            },
+            {
+                FileType: "code",
+                Extention: "m"
+            },
+            {
+                FileType: "code",
+                Extention: "mak"
+            },
+            {
+                FileType: "code",
+                Extention: "make"
+            },
+            {
+                FileType: "code",
+                Extention: "manifest"
+            },
+            {
+                FileType: "code",
+                Extention: "master"
+            },
+            {
+                FileType: "code",
+                Extention: "md"
+            },
+            {
+                FileType: "code",
+                Extention: "markdn"
+            },
+            {
+                FileType: "code",
+                Extention: "markdown"
+            },
+            {
+                FileType: "code",
+                Extention: "mdown"
+            },
+            {
+                FileType: "code",
+                Extention: "mkdn"
+            },
+            {
+                FileType: "code",
+                Extention: "ml"
+            },
+            {
+                FileType: "code",
+                Extention: "mli"
+            },
+            {
+                FileType: "code",
+                Extention: "mll"
+            },
+            {
+                FileType: "code",
+                Extention: "mly"
+            },
+            {
+                FileType: "code",
+                Extention: "mm"
+            },
+            {
+                FileType: "code",
+                Extention: "mud"
+            },
+            {
+                FileType: "code",
+                Extention: "nfo"
+            },
+            {
+                FileType: "code",
+                Extention: "opml"
+            },
+            {
+                FileType: "code",
+                Extention: "osascript"
+            },
+            {
+                FileType: "code",
+                Extention: "p"
+            },
+            {
+                FileType: "code",
+                Extention: "pas"
+            },
+            {
+                FileType: "code",
+                Extention: "patch"
+            },
+            {
+                FileType: "code",
+                Extention: "php"
+            },
+            {
+                FileType: "code",
+                Extention: "php2"
+            },
+            {
+                FileType: "code",
+                Extention: "php3"
+            },
+            {
+                FileType: "code",
+                Extention: "php4"
+            },
+            {
+                FileType: "code",
+                Extention: "php5"
+            },
+            {
+                FileType: "code",
+                Extention: "phtml"
+            },
+            {
+                FileType: "code",
+                Extention: "pl"
+            },
+            {
+                FileType: "code",
+                Extention: "pm"
+            },
+            {
+                FileType: "code",
+                Extention: "pod"
+            },
+            {
+                FileType: "code",
+                Extention: "pp"
+            },
+            {
+                FileType: "code",
+                Extention: "profile"
+            },
+            {
+                FileType: "code",
+                Extention: "ps1"
+            },
+            {
+                FileType: "code",
+                Extention: "ps1xml"
+            },
+            {
+                FileType: "code",
+                Extention: "psd1"
+            },
+            {
+                FileType: "code",
+                Extention: "psm1"
+            },
+            {
+                FileType: "code",
+                Extention: "pss"
+            },
+            {
+                FileType: "code",
+                Extention: "pt"
+            },
+            {
+                FileType: "code",
+                Extention: "py"
+            },
+            {
+                FileType: "code",
+                Extention: "pyw"
+            },
+            {
+                FileType: "code",
+                Extention: "r"
+            },
+            {
+                FileType: "code",
+                Extention: "rake"
+            },
+            {
+                FileType: "code",
+                Extention: "rb"
+            },
+            {
+                FileType: "code",
+                Extention: "rbx"
+            },
+            {
+                FileType: "code",
+                Extention: "rc"
+            },
+            {
+                FileType: "code",
+                Extention: "rdf"
+            },
+            {
+                FileType: "code",
+                Extention: "re"
+            },
+            {
+                FileType: "code",
+                Extention: "reg"
+            },
+            {
+                FileType: "code",
+                Extention: "rest"
+            },
+            {
+                FileType: "code",
+                Extention: "resw"
+            },
+            {
+                FileType: "code",
+                Extention: "resx"
+            },
+            {
+                FileType: "code",
+                Extention: "rhtml"
+            },
+            {
+                FileType: "code",
+                Extention: "rjs"
+            },
+            {
+                FileType: "code",
+                Extention: "rprofile"
+            },
+            {
+                FileType: "code",
+                Extention: "rpy"
+            },
+            {
+                FileType: "code",
+                Extention: "rss"
+            },
+            {
+                FileType: "code",
+                Extention: "rst"
+            },
+            {
+                FileType: "code",
+                Extention: "ruby"
+            },
+            {
+                FileType: "code",
+                Extention: "rxml"
+            },
+            {
+                FileType: "code",
+                Extention: "s"
+            },
+            {
+                FileType: "code",
+                Extention: "sass"
+            },
+            {
+                FileType: "code",
+                Extention: "scala"
+            },
+            {
+                FileType: "code",
+                Extention: "scm"
+            },
+            {
+                FileType: "code",
+                Extention: "sconscript"
+            },
+            {
+                FileType: "code",
+                Extention: "sconstruct"
+            },
+            {
+                FileType: "code",
+                Extention: "script"
+            },
+            {
+                FileType: "code",
+                Extention: "scss"
+            },
+            {
+                FileType: "code",
+                Extention: "sgml"
+            },
+            {
+                FileType: "code",
+                Extention: "sh"
+            },
+            {
+                FileType: "code",
+                Extention: "shtml"
+            },
+            {
+                FileType: "code",
+                Extention: "sml"
+            },
+            {
+                FileType: "code",
+                Extention: "svn-base"
+            },
+            {
+                FileType: "code",
+                Extention: "swift"
+            },
+            {
+                FileType: "code",
+                Extention: "sql"
+            },
+            {
+                FileType: "code",
+                Extention: "sty"
+            },
+            {
+                FileType: "code",
+                Extention: "tcl"
+            },
+            {
+                FileType: "code",
+                Extention: "tex"
+            },
+            {
+                FileType: "code",
+                Extention: "textile"
+            },
+            {
+                FileType: "code",
+                Extention: "tld"
+            },
+            {
+                FileType: "code",
+                Extention: "tli"
+            },
+            {
+                FileType: "code",
+                Extention: "tmpl"
+            },
+            {
+                FileType: "code",
+                Extention: "tpl"
+            },
+            {
+                FileType: "code",
+                Extention: "vb"
+            },
+            {
+                FileType: "code",
+                Extention: "vi"
+            },
+            {
+                FileType: "code",
+                Extention: "vim"
+            },
+            {
+                FileType: "code",
+                Extention: "vmg"
+            },
+            {
+                FileType: "code",
+                Extention: "webpart"
+            },
+            {
+                FileType: "code",
+                Extention: "wsp"
+            },
+            {
+                FileType: "code",
+                Extention: "wsdl"
+            },
+            {
+                FileType: "code",
+                Extention: "xhtml"
+            },
+            {
+                FileType: "code",
+                Extention: "xoml"
+            },
+            {
+                FileType: "code",
+                Extention: "xsd"
+            },
+            {
+                FileType: "code",
+                Extention: "xslt"
+            },
+            {
+                FileType: "code",
+                Extention: "yaml"
+            },
+            {
+                FileType: "code",
+                Extention: "yaws"
+            },
+            {
+                FileType: "code",
+                Extention: "yml"
+            },
+            {
+                FileType: "code",
+                Extention: "zsh"
+            },
+            {
+                FileType: "contact",
+                Extention: "vcf"
+            },
+            {
+                FileType: "csv",
+                Extention: "csv"
+            },
+            {
+                FileType: "designer",
+                Extention: "design"
+            },
+            {
+                FileType: "desktopfolder",
+                Extention: "{}"
+            },
+            {
+                FileType: "docset",
+                Extention: "{}"
+            },
+            {
+                FileType: "documentsfolder",
+                Extention: "{}"
+            },
+            {
+                FileType: "docx",
+                Extention: "doc"
+            },
+            {
+                FileType: "docx",
+                Extention: "docm"
+            },
+            {
+                FileType: "docx",
+                Extention: "docx"
+            },
+            {
+                FileType: "docx",
+                Extention: "docb"
+            },
+            {
+                FileType: "dotx",
+                Extention: "dot"
+            },
+            {
+                FileType: "dotx",
+                Extention: "dotm"
+            },
+            {
+                FileType: "dotx",
+                Extention: "dotx"
+            },
+            {
+                FileType: "email",
+                Extention: "eml"
+            },
+            {
+                FileType: "email",
+                Extention: "msg"
+            },
+            {
+                FileType: "email",
+                Extention: "oft"
+            },
+            {
+                FileType: "email",
+                Extention: "ost"
+            },
+            {
+                FileType: "email",
+                Extention: "pst"
+            },
+            {
+                FileType: "exe",
+                Extention: "application"
+            },
+            {
+                FileType: "exe",
+                Extention: "appref-ms"
+            },
+            {
+                FileType: "exe",
+                Extention: "apk"
+            },
+            {
+                FileType: "exe",
+                Extention: "app"
+            },
+            {
+                FileType: "exe",
+                Extention: "appx"
+            },
+            {
+                FileType: "exe",
+                Extention: "exe"
+            },
+            {
+                FileType: "exe",
+                Extention: "ipa"
+            },
+            {
+                FileType: "exe",
+                Extention: "msi"
+            },
+            {
+                FileType: "exe",
+                Extention: "xap"
+            },
+            {
+                FileType: "favoritesfolder",
+                Extention: "{}"
+            },
+            {
+                FileType: "folder",
+                Extention: "{}"
+            },
+            {
+                FileType: "font",
+                Extention: "ttf"
+            },
+            {
+                FileType: "font",
+                Extention: "otf"
+            },
+            {
+                FileType: "font",
+                Extention: "woff"
+            },
+            {
+                FileType: "form",
+                Extention: "{}"
+            },
+            {
+                FileType: "genericfile",
+                Extention: "{}"
+            },
+            {
+                FileType: "html",
+                Extention: "htm"
+            },
+            {
+                FileType: "html",
+                Extention: "html"
+            },
+            {
+                FileType: "html",
+                Extention: "mht"
+            },
+            {
+                FileType: "html",
+                Extention: "mhtml"
+            },
+            {
+                FileType: "ipynb",
+                Extention: "nnb"
+            },
+            {
+                FileType: "ipynb",
+                Extention: "ipynb"
+            },
+            {
+                FileType: "link",
+                Extention: "lnk"
+            },
+            {
+                FileType: "link",
+                Extention: "link"
+            },
+            {
+                FileType: "link",
+                Extention: "url"
+            },
+            {
+                FileType: "link",
+                Extention: "website"
+            },
+            {
+                FileType: "link",
+                Extention: "webloc"
+            },
+            {
+                FileType: "linkedfolder",
+                Extention: "{}"
+            },
+            {
+                FileType: "listitem",
+                Extention: "{}"
+            },
+            {
+                FileType: "loop",
+                Extention: "fluid"
+            },
+            {
+                FileType: "loop",
+                Extention: "loop"
+            },
+            {
+                FileType: "loop",
+                Extention: "note"
+            },
+            {
+                FileType: "loopworkspace",
+                Extention: "{}"
+            },
+            {
+                FileType: "officescript",
+                Extention: "osts"
+            },
+            {
+                FileType: "splist",
+                Extention: "{}"
+            },
+            {
+                FileType: "mcworld",
+                Extention: "mcworld"
+            },
+            {
+                FileType: "mctemplate",
+                Extention: "mctemplate"
+            },
+            {
+                FileType: "model",
+                Extention: "3ds"
+            },
+            {
+                FileType: "model",
+                Extention: "3mf"
+            },
+            {
+                FileType: "model",
+                Extention: "blend"
+            },
+            {
+                FileType: "model",
+                Extention: "cool"
+            },
+            {
+                FileType: "model",
+                Extention: "dae"
+            },
+            {
+                FileType: "model",
+                Extention: "df"
+            },
+            {
+                FileType: "model",
+                Extention: "dwfx"
+            },
+            {
+                FileType: "model",
+                Extention: "dwg"
+            },
+            {
+                FileType: "model",
+                Extention: "dxf"
+            },
+            {
+                FileType: "model",
+                Extention: "fbx"
+            },
+            {
+                FileType: "model",
+                Extention: "glb"
+            },
+            {
+                FileType: "model",
+                Extention: "gltf"
+            },
+            {
+                FileType: "model",
+                Extention: "holo"
+            },
+            {
+                FileType: "model",
+                Extention: "layer"
+            },
+            {
+                FileType: "model",
+                Extention: "layout"
+            },
+            {
+                FileType: "model",
+                Extention: "max"
+            },
+            {
+                FileType: "model",
+                Extention: "mtl"
+            },
+            {
+                FileType: "model",
+                Extention: "obj"
+            },
+            {
+                FileType: "model",
+                Extention: "off"
+            },
+            {
+                FileType: "model",
+                Extention: "ply"
+            },
+            {
+                FileType: "model",
+                Extention: "skp"
+            },
+            {
+                FileType: "model",
+                Extention: "stp"
+            },
+            {
+                FileType: "model",
+                Extention: "stl"
+            },
+            {
+                FileType: "model",
+                Extention: "t"
+            },
+            {
+                FileType: "model",
+                Extention: "thl"
+            },
+            {
+                FileType: "model",
+                Extention: "x"
+            },
+            {
+                FileType: "mpp",
+                Extention: "mpp"
+            },
+            {
+                FileType: "mpt",
+                Extention: "mpt"
+            },
+            {
+                FileType: "multiple",
+                Extention: "one"
+            },
+            {
+                FileType: "one",
+                Extention: "{}"
+            },
+            {
+                FileType: "onetoc",
+                Extention: "ms-one-stub"
+            },
+            {
+                FileType: "onetoc",
+                Extention: "onetoc"
+            },
+            {
+                FileType: "onetoc",
+                Extention: "onetoc2"
+            },
+            {
+                FileType: "onetoc",
+                Extention: "onepkg"
+            },
+            {
+                FileType: "pbiapp",
+                Extention: "{}"
+            },
+            {
+                FileType: "pdf",
+                Extention: "pdf"
+            },
+            {
+                FileType: "photo",
+                Extention: "arw"
+            },
+            {
+                FileType: "photo",
+                Extention: "bmp"
+            },
+            {
+                FileType: "photo",
+                Extention: "cr2"
+            },
+            {
+                FileType: "photo",
+                Extention: "crw"
+            },
+            {
+                FileType: "photo",
+                Extention: "dic"
+            },
+            {
+                FileType: "photo",
+                Extention: "dicm"
+            },
+            {
+                FileType: "photo",
+                Extention: "dcm"
+            },
+            {
+                FileType: "photo",
+                Extention: "dcm30"
+            },
+            {
+                FileType: "photo",
+                Extention: "dcr"
+            },
+            {
+                FileType: "photo",
+                Extention: "dds"
+            },
+            {
+                FileType: "photo",
+                Extention: "dib"
+            },
+            {
+                FileType: "photo",
+                Extention: "dng"
+            },
+            {
+                FileType: "photo",
+                Extention: "erf"
+            },
+            {
+                FileType: "photo",
+                Extention: "gif"
+            },
+            {
+                FileType: "photo",
+                Extention: "heic"
+            },
+            {
+                FileType: "photo",
+                Extention: "heif"
+            },
+            {
+                FileType: "photo",
+                Extention: "ico"
+            },
+            {
+                FileType: "photo",
+                Extention: "jfi"
+            },
+            {
+                FileType: "photo",
+                Extention: "jfif"
+            },
+            {
+                FileType: "photo",
+                Extention: "jif"
+            },
+            {
+                FileType: "photo",
+                Extention: "jpe"
+            },
+            {
+                FileType: "photo",
+                Extention: "jpeg"
+            },
+            {
+                FileType: "photo",
+                Extention: "jpg"
+            },
+            {
+                FileType: "photo",
+                Extention: "jxr"
+            },
+            {
+                FileType: "photo",
+                Extention: "kdc"
+            },
+            {
+                FileType: "photo",
+                Extention: "mrw"
+            },
+            {
+                FileType: "photo",
+                Extention: "nef"
+            },
+            {
+                FileType: "photo",
+                Extention: "orf"
+            },
+            {
+                FileType: "photo",
+                Extention: "pct"
+            },
+            {
+                FileType: "photo",
+                Extention: "pict"
+            },
+            {
+                FileType: "photo",
+                Extention: "png"
+            },
+            {
+                FileType: "photo",
+                Extention: "pns"
+            },
+            {
+                FileType: "photo",
+                Extention: "psb"
+            },
+            {
+                FileType: "photo",
+                Extention: "psd"
+            },
+            {
+                FileType: "photo",
+                Extention: "raw"
+            },
+            {
+                FileType: "photo",
+                Extention: "tga"
+            },
+            {
+                FileType: "photo",
+                Extention: "tif"
+            },
+            {
+                FileType: "photo",
+                Extention: "tiff"
+            },
+            {
+                FileType: "photo",
+                Extention: "wdp"
+            },
+            {
+                FileType: "photo360",
+                Extention: "{}"
+            },
+            {
+                FileType: "picturesfolder",
+                Extention: "{}"
+            },
+            {
+                FileType: "planner",
+                Extention: "{}"
+            },
+            {
+                FileType: "potx",
+                Extention: "pot"
+            },
+            {
+                FileType: "potx",
+                Extention: "potm"
+            },
+            {
+                FileType: "potx",
+                Extention: "potx"
+            },
+            {
+                FileType: "powerbi",
+                Extention: "pbids"
+            },
+            {
+                FileType: "powerbi",
+                Extention: "pbix"
+            },
+            {
+                FileType: "ppsx",
+                Extention: "pps"
+            },
+            {
+                FileType: "ppsx",
+                Extention: "ppsm"
+            },
+            {
+                FileType: "ppsx",
+                Extention: "ppsx"
+            },
+            {
+                FileType: "pptx",
+                Extention: "ppt"
+            },
+            {
+                FileType: "pptx",
+                Extention: "pptm"
+            },
+            {
+                FileType: "pptx",
+                Extention: "pptx"
+            },
+            {
+                FileType: "pptx",
+                Extention: "sldx"
+            },
+            {
+                FileType: "pptx",
+                Extention: "sldm"
+            },
+            {
+                FileType: "presentation",
+                Extention: "odp"
+            },
+            {
+                FileType: "presentation",
+                Extention: "gslides"
+            },
+            {
+                FileType: "presentation",
+                Extention: "key"
+            },
+            {
+                FileType: "pub",
+                Extention: "pub"
+            },
+            {
+                FileType: "spo",
+                Extention: "aspx"
+            },
+            {
+                FileType: "sponews",
+                Extention: "{}"
+            },
+            {
+                FileType: "spreadsheet",
+                Extention: "odc"
+            },
+            {
+                FileType: "spreadsheet",
+                Extention: "ods"
+            },
+            {
+                FileType: "spreadsheet",
+                Extention: "gsheet"
+            },
+            {
+                FileType: "spreadsheet",
+                Extention: "numbers"
+            },
+            {
+                FileType: "spreadsheet",
+                Extention: "tsv"
+            },
+            {
+                FileType: "rtf",
+                Extention: "epub"
+            },
+            {
+                FileType: "rtf",
+                Extention: "gdoc"
+            },
+            {
+                FileType: "rtf",
+                Extention: "odt"
+            },
+            {
+                FileType: "rtf",
+                Extention: "rtf"
+            },
+            {
+                FileType: "rtf",
+                Extention: "wri"
+            },
+            {
+                FileType: "rtf",
+                Extention: "pages"
+            },
+            {
+                FileType: "sharedfolder",
+                Extention: "{}"
+            },
+            {
+                FileType: "playlist",
+                Extention: "{}"
+            },
+            {
+                FileType: "sway",
+                Extention: "{}"
+            },
+            {
+                FileType: "sysfile",
+                Extention: "bak"
+            },
+            {
+                FileType: "sysfile",
+                Extention: "bin"
+            },
+            {
+                FileType: "sysfile",
+                Extention: "cab"
+            },
+            {
+                FileType: "sysfile",
+                Extention: "cache"
+            },
+            {
+                FileType: "sysfile",
+                Extention: "cat"
+            },
+            {
+                FileType: "sysfile",
+                Extention: "cer"
+            },
+            {
+                FileType: "sysfile",
+                Extention: "class"
+            },
+            {
+                FileType: "sysfile",
+                Extention: "dat"
+            },
+            {
+                FileType: "sysfile",
+                Extention: "db"
+            },
+            {
+                FileType: "sysfile",
+                Extention: "dbg"
+            },
+            {
+                FileType: "sysfile",
+                Extention: "dl_"
+            },
+            {
+                FileType: "sysfile",
+                Extention: "dll"
+            },
+            {
+                FileType: "sysfile",
+                Extention: "ithmb"
+            },
+            {
+                FileType: "sysfile",
+                Extention: "jar"
+            },
+            {
+                FileType: "sysfile",
+                Extention: "kb"
+            },
+            {
+                FileType: "sysfile",
+                Extention: "ldt"
+            },
+            {
+                FileType: "sysfile",
+                Extention: "lrprev"
+            },
+            {
+                FileType: "sysfile",
+                Extention: "pkpass"
+            },
+            {
+                FileType: "sysfile",
+                Extention: "ppa"
+            },
+            {
+                FileType: "sysfile",
+                Extention: "ppam"
+            },
+            {
+                FileType: "sysfile",
+                Extention: "pdb"
+            },
+            {
+                FileType: "sysfile",
+                Extention: "rom"
+            },
+            {
+                FileType: "sysfile",
+                Extention: "thm"
+            },
+            {
+                FileType: "sysfile",
+                Extention: "thmx"
+            },
+            {
+                FileType: "sysfile",
+                Extention: "vsl"
+            },
+            {
+                FileType: "sysfile",
+                Extention: "xla"
+            },
+            {
+                FileType: "sysfile",
+                Extention: "xlam"
+            },
+            {
+                FileType: "sysfile",
+                Extention: "xlb"
+            },
+            {
+                FileType: "sysfile",
+                Extention: "xll"
+            },
+            {
+                FileType: "todoitem",
+                Extention: "{}"
+            },
+            {
+                FileType: "txt",
+                Extention: "dif"
+            },
+            {
+                FileType: "txt",
+                Extention: "diff"
+            },
+            {
+                FileType: "txt",
+                Extention: "readme"
+            },
+            {
+                FileType: "txt",
+                Extention: "out"
+            },
+            {
+                FileType: "txt",
+                Extention: "plist"
+            },
+            {
+                FileType: "txt",
+                Extention: "properties"
+            },
+            {
+                FileType: "txt",
+                Extention: "text"
+            },
+            {
+                FileType: "txt",
+                Extention: "txt"
+            },
+            {
+                FileType: "vaultclosed",
+                Extention: "{}"
+            },
+            {
+                FileType: "vaultopen",
+                Extention: "{}"
+            },
+            {
+                FileType: "vector",
+                Extention: "ai"
+            },
+            {
+                FileType: "vector",
+                Extention: "ait"
+            },
+            {
+                FileType: "vector",
+                Extention: "cvs"
+            },
+            {
+                FileType: "vector",
+                Extention: "dgn"
+            },
+            {
+                FileType: "vector",
+                Extention: "gdraw"
+            },
+            {
+                FileType: "vector",
+                Extention: "pd"
+            },
+            {
+                FileType: "vector",
+                Extention: "emf"
+            },
+            {
+                FileType: "vector",
+                Extention: "eps"
+            },
+            {
+                FileType: "vector",
+                Extention: "fig"
+            },
+            {
+                FileType: "vector",
+                Extention: "ind"
+            },
+            {
+                FileType: "vector",
+                Extention: "indd"
+            },
+            {
+                FileType: "vector",
+                Extention: "indl"
+            },
+            {
+                FileType: "vector",
+                Extention: "indt"
+            },
+            {
+                FileType: "vector",
+                Extention: "indb"
+            },
+            {
+                FileType: "vector",
+                Extention: "ps"
+            },
+            {
+                FileType: "vector",
+                Extention: "svg"
+            },
+            {
+                FileType: "vector",
+                Extention: "svgz"
+            },
+            {
+                FileType: "vector",
+                Extention: "wmf"
+            },
+            {
+                FileType: "vector",
+                Extention: "oxps"
+            },
+            {
+                FileType: "vector",
+                Extention: "xps"
+            },
+            {
+                FileType: "vector",
+                Extention: "xd"
+            },
+            {
+                FileType: "vector",
+                Extention: "sketch"
+            },
+            {
+                FileType: "video",
+                Extention: "3g2"
+            },
+            {
+                FileType: "video",
+                Extention: "3gp"
+            },
+            {
+                FileType: "video",
+                Extention: "3gp2"
+            },
+            {
+                FileType: "video",
+                Extention: "3gpp"
+            },
+            {
+                FileType: "video",
+                Extention: "asf"
+            },
+            {
+                FileType: "video",
+                Extention: "avi"
+            },
+            {
+                FileType: "video",
+                Extention: "dvr-ms"
+            },
+            {
+                FileType: "video",
+                Extention: "flv"
+            },
+            {
+                FileType: "video",
+                Extention: "m1v"
+            },
+            {
+                FileType: "video",
+                Extention: "m4v"
+            },
+            {
+                FileType: "video",
+                Extention: "mkv"
+            },
+            {
+                FileType: "video",
+                Extention: "mod"
+            },
+            {
+                FileType: "video",
+                Extention: "mov"
+            },
+            {
+                FileType: "video",
+                Extention: "mm4p"
+            },
+            {
+                FileType: "video",
+                Extention: "mp2"
+            },
+            {
+                FileType: "video",
+                Extention: "mp2v"
+            },
+            {
+                FileType: "video",
+                Extention: "mp4"
+            },
+            {
+                FileType: "video",
+                Extention: "mp4v"
+            },
+            {
+                FileType: "video",
+                Extention: "mpa"
+            },
+            {
+                FileType: "video",
+                Extention: "mpe"
+            },
+            {
+                FileType: "video",
+                Extention: "mpeg"
+            },
+            {
+                FileType: "video",
+                Extention: "mpg"
+            },
+            {
+                FileType: "video",
+                Extention: "mpv"
+            },
+            {
+                FileType: "video",
+                Extention: "mpv2"
+            },
+            {
+                FileType: "video",
+                Extention: "mts"
+            },
+            {
+                FileType: "video",
+                Extention: "ogg"
+            },
+            {
+                FileType: "video",
+                Extention: "qt"
+            },
+            {
+                FileType: "video",
+                Extention: "swf"
+            },
+            {
+                FileType: "video",
+                Extention: "ts"
+            },
+            {
+                FileType: "video",
+                Extention: "vob"
+            },
+            {
+                FileType: "video",
+                Extention: "webm"
+            },
+            {
+                FileType: "video",
+                Extention: "wlmp"
+            },
+            {
+                FileType: "video",
+                Extention: "wm"
+            },
+            {
+                FileType: "video",
+                Extention: "wmv"
+            },
+            {
+                FileType: "video",
+                Extention: "wmx"
+            },
+            {
+                FileType: "video360",
+                Extention: "{}"
+            },
+            {
+                FileType: "vsdx",
+                Extention: "vdx"
+            },
+            {
+                FileType: "vsdx",
+                Extention: "vsd"
+            },
+            {
+                FileType: "vsdx",
+                Extention: "vsdm"
+            },
+            {
+                FileType: "vsdx",
+                Extention: "vsdx"
+            },
+            {
+                FileType: "vsdx",
+                Extention: "vsw"
+            },
+            {
+                FileType: "vsdx",
+                Extention: "vdw"
+            },
+            {
+                FileType: "vssx",
+                Extention: "vss"
+            },
+            {
+                FileType: "vssx",
+                Extention: "vssm"
+            },
+            {
+                FileType: "vssx",
+                Extention: "vssx"
+            },
+            {
+                FileType: "vstx",
+                Extention: "vst"
+            },
+            {
+                FileType: "vstx",
+                Extention: "vstm"
+            },
+            {
+                FileType: "vstx",
+                Extention: "vstx"
+            },
+            {
+                FileType: "vstx",
+                Extention: "vsx"
+            },
+            {
+                FileType: "whiteboard",
+                Extention: "whiteboard"
+            },
+            {
+                FileType: "whiteboard",
+                Extention: "wbtx"
+            },
+            {
+                FileType: "xlsx",
+                Extention: "xlc"
+            },
+            {
+                FileType: "xlsx",
+                Extention: "xls"
+            },
+            {
+                FileType: "xlsx",
+                Extention: "xlsb"
+            },
+            {
+                FileType: "xlsx",
+                Extention: "xlsm"
+            },
+            {
+                FileType: "xlsx",
+                Extention: "xlsx"
+            },
+            {
+                FileType: "xlsx",
+                Extention: "xlw"
+            },
+            {
+                FileType: "xltx",
+                Extention: "xlt"
+            },
+            {
+                FileType: "xltx",
+                Extention: "xltm"
+            },
+            {
+                FileType: "xltx",
+                Extention: "xltx"
+            },
+            {
+                FileType: "xml",
+                Extention: "xaml"
+            },
+            {
+                FileType: "xml",
+                Extention: "xml"
+            },
+            {
+                FileType: "xml",
+                Extention: "xsl"
+            },
+            {
+                FileType: "xsn",
+                Extention: "xsn"
+            },
+            {
+                FileType: "zip",
+                Extention: "zip"
+            }
+        )
+    Children:
+    - con_component:
+        Control: GroupContainer
+        Variant: verticalAutoLayoutContainer
+        Properties:
+          DropShadow: =DropShadow.None
+          Height: =Parent.Height
+          LayoutDirection: =LayoutDirection.Vertical
+          LayoutMode: =LayoutMode.Auto
+          PaddingBottom: =12
+          PaddingLeft: =12
+          PaddingRight: =12
+          PaddingTop: =12
+          RadiusBottomLeft: =0
+          RadiusBottomRight: =0
+          RadiusTopLeft: =0
+          RadiusTopRight: =0
+          Width: =Parent.Width
+        Children:
+        - ico_upload_area:
+            Control: GroupContainer
+            Variant: verticalAutoLayoutContainer
+            Properties:
+              DropShadow: =DropShadow.None
+              Height: =170
+              LayoutDirection: =LayoutDirection.Vertical
+              LayoutGap: =6
+              LayoutMinHeight: =52
+              LayoutMode: =LayoutMode.Auto
+              RadiusBottomLeft: =0
+              RadiusBottomRight: =0
+              RadiusTopLeft: =0
+              RadiusTopRight: =0
+            Children:
+            - con_upload_header:
+                Control: GroupContainer
+                Variant: horizontalAutoLayoutContainer
+                Properties:
+                  DropShadow: =DropShadow.None
+                  FillPortions: =0
+                  Height: =44
+                  LayoutGap: =6
+                  LayoutMinHeight: =32
+                  LayoutMode: =LayoutMode.Auto
+                  PaddingBottom: =6
+                  PaddingLeft: =6
+                  PaddingRight: =6
+                  PaddingTop: =6
+                  RadiusBottomLeft: =0
+                  RadiusBottomRight: =0
+                  RadiusTopLeft: =0
+                  RadiusTopRight: =0
+                Children:
+                - ico_upload_header:
+                    Control: Classic/Icon
+                    Variant: Download
+                    Properties:
+                      OnSelect: "=// この式は、変数 varUploadVisible の値を反転させます。\r\nSet(varUploadVisible, !varUploadVisible) "
+                      AlignInContainer: =AlignInContainer.Center
+                      Color: =App.Theme.Colors.Lighter10
+                      Height: =26
+                      Icon: =Icon.Download
+                      Rotation: =180
+                      Width: =26
+                - lbl_upload_header:
+                    Control: Label
+                    Properties:
+                      OnSelect: =Select(ico_upload_header)
+                      Text: ="アップロード"
+                      AlignInContainer: =AlignInContainer.Stretch
+                      Height: =ico_upload_header.Height
+                      LayoutMinHeight: =ico_upload_header.Height
+                      PaddingBottom: =0
+                      PaddingLeft: =0
+                      PaddingRight: =0
+                      PaddingTop: =0
+                      Size: =13
+            - attach_files:
+                Control: Attachments
+                Properties:
+                  OnAddFile: |
+                    =Set(
+                        _endpoint,
+                        $"https://graph.microsoft.com/v1.0/sites/{cmp_file_uploader.site_id}/drives/{cmp_file_uploader.drive_id}/root:/"
+                    );
+                    ForAll(
+                        Self.Attachments,
+                        IfError(
+                            Office365グループ.HttpRequest(
+                                $"{_endpoint}{EncodeUrl($"{cmp_file_uploader.folder_name}/{ThisRecord.Name}")}",
+                                "GET",
+                                ""
+                            ),
+                            Office365グループ.HttpRequest(
+                                $"{_endpoint}{EncodeUrl($"{cmp_file_uploader.folder_name}/{ThisRecord.Name}")}:/content",
+                                "PUT",
+                                ThisRecord.Value
+                            )
+                        )
+                    );
+                    ClearCollect(
+                        FolderChildren,
+                        ForAll(
+                            Office365グループ.HttpRequest(
+                                $"{_endpoint}{EncodeUrl(cmp_file_uploader.folder_name)}:/children",
+                                "GET",
+                                ""
+                            ).value,
+                            {
+                                name: Text(ThisRecord.name),
+                                webUrl: Text(ThisRecord.webUrl)
+                            }
+                        )
+                    );
+                    Reset(Self);
+                  NoAttachmentsText: ="ドラッグアンドドロップ エリア"
+                  Tooltip: ="添付ファイル"
+                  AlignInContainer: =AlignInContainer.Center
+                  BorderColor: =
+                  BorderThickness: =0.5
+                  DropTargetBorderThickness: =0.5
+                  Height: =108
+                  PaddingBottom: =5
+                  PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                  PaddingRight: =5
+                  PaddingTop: =5
+                  Size: =10.5
+                  Visible: =varUploadVisible
+                  Width: =Parent.Width * 0.9
+                  X: =30
+            - shp_upload_area:
+                Control: Rectangle
+                Properties:
+                  DisplayMode: =DisplayMode.View
+                  Fill: =RGBA(53, 61, 63, 1)
+                  Height: =0.1
+                  Width: =Parent.Width
+            - con_path:
+                Control: GroupContainer
+                Variant: horizontalAutoLayoutContainer
+                Properties:
+                  DropShadow: =DropShadow.None
+                  FillPortions: =0
+                  Height: =64
+                  LayoutMode: =LayoutMode.Auto
+                  RadiusBottomLeft: =0
+                  RadiusBottomRight: =0
+                  RadiusTopLeft: =0
+                  RadiusTopRight: =0
+                Children:
+                - lbl_documentlibrary:
+                    Control: Label
+                    Properties:
+                      Text: ="ドキュメント"
+                      Align: =Align.Right
+                      AlignInContainer: =AlignInContainer.Stretch
+                      DisplayMode: =DisplayMode.View
+                      Height: =ico_upload_header.Height
+                      LayoutMinHeight: =ico_upload_header.Height
+                      PaddingBottom: =0
+                      PaddingLeft: =0
+                      PaddingRight: =0
+                      PaddingTop: =0
+                      Size: =11
+                      Width: =120
+                - ico_chevron:
+                    Control: Classic/Icon
+                    Variant: ChevronRight
+                    Properties:
+                      AlignInContainer: =AlignInContainer.Center
+                      Color: =RGBA(122, 138, 143, 1)
+                      DisabledColor: =RGBA(122, 138, 143, 1)
+                      DisplayMode: =DisplayMode.Disabled
+                      Height: =14
+                      Icon: =Icon.ChevronRight
+                      Width: =26
+                - lbl_folder:
+                    Control: Label
+                    Properties:
+                      Text: =cmp_file_uploader.folder_name
+                      AlignInContainer: =AlignInContainer.Stretch
+                      DisplayMode: =DisplayMode.View
+                      FontWeight: =FontWeight.Bold
+                      Height: =ico_upload_header.Height
+                      LayoutMinHeight: =ico_upload_header.Height
+                      PaddingBottom: =0
+                      PaddingLeft: =0
+                      PaddingRight: =0
+                      PaddingTop: =0
+                      Size: =13
+                      Width: =200
+            - con_gal_header:
+                Control: GroupContainer
+                Variant: horizontalAutoLayoutContainer
+                Properties:
+                  DropShadow: =DropShadow.None
+                  FillPortions: =0
+                  Height: =44
+                  LayoutMinHeight: =32
+                  LayoutMode: =LayoutMode.Auto
+                  PaddingBottom: =6
+                  PaddingLeft: =6
+                  PaddingRight: =6
+                  PaddingTop: =6
+                  RadiusBottomLeft: =0
+                  RadiusBottomRight: =0
+                  RadiusTopLeft: =0
+                  RadiusTopRight: =0
+                Children:
+                - img_files:
+                    Control: Image
+                    Properties:
+                      Image: ="https://static2.sharepointonline.com/files/fabric/assets/item-types/24/genericfile.svg"
+                      Height: =32
+                      Width: =44
+                - hdr_name:
+                    Control: Label
+                    Properties:
+                      Text: ="名前"
+                      FontWeight: =FontWeight.Semibold
+                      Height: =32
+                      Size: =11
+                      Width: =240
+                - hdr_lastmodifieddatetime:
+                    Control: Label
+                    Properties:
+                      Text: ="更新日時"
+                      FontWeight: =FontWeight.Semibold
+                      Height: =32
+                      Size: =11
+                      Width: =180
+                - hdr_lastmodifiedby:
+                    Control: Label
+                    Properties:
+                      Text: ="更新者"
+                      FontWeight: =FontWeight.Semibold
+                      Height: =32
+                      Size: =11
+                      Width: =140
+            - shp_header:
+                Control: Rectangle
+                Properties:
+                  DisplayMode: =DisplayMode.View
+                  Fill: =RGBA(53, 61, 63, 1)
+                  Height: =0.1
+                  Width: =Parent.Width
+            - gal_files:
+                Control: Gallery
+                Variant: galleryVertical
+                Properties:
+                  OnSelect: =Launch(ThisItem.webUrl);
+                  Items: =FolderChildren
+                  DelayItemLoading: =true
+                  Layout: =Layout.Vertical
+                  LoadingSpinner: =LoadingSpinner.Data
+                  TemplatePadding: =0
+                  TemplateSize: =44
+                  Transition: =Transition.Pop
+                Children:
+                - lbl_lastmodifiedby:
+                    Control: Label
+                    Properties:
+                      Text: =ThisItem.lastModifiedBy
+                      Height: =hdr_name.Height
+                      Size: =9.5
+                      Width: =hdr_lastmodifiedby.Width
+                      X: =hdr_lastmodifiedby.X
+                      Y: =img_filetype.Y
+                - lbl_lastmodifieddatetime:
+                    Control: Label
+                    Properties:
+                      Text: =ThisItem.lastModifiedDateTime
+                      Height: =hdr_name.Height
+                      Size: =9.5
+                      Width: =hdr_lastmodifieddatetime.Width
+                      X: =hdr_lastmodifieddatetime.X
+                      Y: =img_filetype.Y
+                - lbl_filename:
+                    Control: Label
+                    Properties:
+                      Text: =ThisItem.name
+                      Height: =hdr_name.Height
+                      Size: =10.5
+                      Width: =hdr_name.Width
+                      X: =50
+                      Y: =img_filetype.Y
+                - img_filetype:
+                    Control: Image
+                    Properties:
+                      OnSelect: =Select(Parent)
+                      Image: |-
+                        =$"https://static2.sharepointonline.com/files/fabric/assets/item-types/24/{Coalesce(
+                            LookUp(
+                                cmp_file_uploader.static_icon_table,
+                                Extention = Last(
+                                    Split(
+                                        ThisItem.name,
+                                        "."
+                                    )
+                                ).Value
+                            ).FileType,
+                            "genericfile"
+                        )}.svg"
+                      Height: =img_files.Height
+                      Width: =img_files.Width
+                      X: =img_files.X
+                      Y: =(Parent.TemplateHeight - Self.Height) / 2
+                - shp_gal_files:
+                    Control: Rectangle
+                    Properties:
+                      DisplayMode: =DisplayMode.View
+                      Fill: =RGBA(53, 61, 63, 1)
+                      Height: =0.1
+                      Width: =Parent.Width
+                      Y: =Parent.TemplateHeight - Self.Height
+    CustomProperties:
+    - site_id:
+        Direction: Input
+        PropertyType: Data
+        DataType: String
+        IsResettable: false
+        DisplayName: site_id
+        Description: SharePoint SiteId
+    - drive_id:
+        Direction: Input
+        PropertyType: Data
+        DataType: String
+        IsResettable: false
+        DisplayName: drive_id
+        Description: drive id
+    - folder_name:
+        Direction: Input
+        PropertyType: Data
+        DataType: String
+        IsResettable: false
+        DisplayName: folder_name
+        Description: フォルダ名
+    - static_icon_table:
+        Direction: Input
+        PropertyType: Data
+        DataType: Table
+        IsResettable: false
+        DisplayName: static_icon_table
+        Description: 拡張子からファイルのタイプを定義
+    - response:
+        Direction: Output
+        PropertyType: Data
+        DataType: Table
+        IsResettable: false
+        DisplayName: response
+        Description: カスタム プロパティ
