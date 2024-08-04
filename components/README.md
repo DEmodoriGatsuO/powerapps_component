@@ -1,13 +1,24 @@
 # Power Apps YAML Source Code: File Uploader Component
+**(ja-jp) Power Appsのコンポーネント: ファイルアップローダー**
+
+<a href="https://x.com/DemodoriGatsuo"><img src="https://img.shields.io/twitter/follow/DemodoriGatsuo"/></a>
+
+![Power Apps](https://img.shields.io/badge/-Power%20Apps-742774?style=flat-square&logo=powerapps&logoColor=white)
+![SharePoint](https://img.shields.io/badge/-SharePoint-038387?style=flat-square&logo=microsoft-sharepoint&logoColor=white)
 
 ## Overview
 
-This repository contains the YAML source code for the `cmp_file_uploader` component in Power Apps. This component is designed to facilitate file uploads to SharePoint, utilizing a predefined set of file types and extensions for better user experience.
+This component enables direct file uploads to a folder in a SharePoint document library from Power Apps. It utilizes the Office 365 Groups connector to achieve file uploads.
 
-## Component Structure
+Power AppsからSharePointのドキュメントライブラリのフォルダに直接ファイルアップロードを実現するコンポーネントです。
+Office 365 Groupsコネクタを用いてファイルアップロードを実現しています。
 
-### Component: `cmp_file_uploader`
+[Qiitaによる技術記事](https://qiita.com/DEmodoriGatsuO/items/2b9c25cf5dcd17b4958d)
 
+https://qiita.com/DEmodoriGatsuO/items/2b9c25cf5dcd17b4958d
+
+## Structure component
+**cmp_file_uploader**
 - **Control**: Component
 - **Properties**:
   - `drive_id`: SharePoint drive ID
@@ -15,7 +26,7 @@ This repository contains the YAML source code for the `cmp_file_uploader` compon
   - `site_id`: SharePoint site ID
   - `static_icon_table`: Table defining file types and their extensions
 
-### Custom Properties
+**Custom Properties**
 
 - `site_id`: SharePoint SiteId (Input)
 - `drive_id`: SharePoint Drive ID (Input)
