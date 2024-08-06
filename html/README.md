@@ -157,9 +157,9 @@ This file contains examples of various HTML elements including tables, an unorde
 
     <!-- Flexbox Container -->
     <h2>Horizontal Layout</h2>
-    <div class='flex-container'>
+    <div style='display: flex; justify-content: space-around; align-items: flex-start;'>
         <!-- Unordered List -->
-        <div class='flex-item'>
+        <div style='margin: 10px;'>
             <h3>Unordered List</h3>
             <ul>
                 <li>Item 1</li>
@@ -169,7 +169,7 @@ This file contains examples of various HTML elements including tables, an unorde
         </div>
 
         <!-- Simple Bar Chart -->
-        <div class='flex-item'>
+        <div style='margin: 10px;'>
             <h3>Simple Bar Chart</h3>
             <svg width='150' height='200'>
                 <rect x='10' y='10' width='50' height='150' style='fill:blue;'></rect>
@@ -179,7 +179,7 @@ This file contains examples of various HTML elements including tables, an unorde
         </div>
 
         <!-- Image -->
-        <div class='flex-item'>
+        <div style='margin: 10px;'>
             <h3>Image</h3>
             <img src='https://via.placeholder.com/150' alt='Sample Image' style='width:150px;height:150px;'>
         </div>
