@@ -1,0 +1,211 @@
+- CollapsibleSidebar:
+    Control: Component
+    Description: Sidebars that can expand and contract
+    Properties:
+      SidebarIconSize: =52
+      SidebarMenuTable: |-
+        =// SidebarMenuTable
+        Table(
+            {
+                Icon: Icon.Home,
+                Text: "Home",
+                Output: "Home"
+            },
+            {
+                Icon: Icon.Mail,
+                Text: "Message",
+                Output: "Message"
+            },
+            {
+                Icon: Icon.Settings,
+                Text: "Config",
+                Output: "Config"
+            },
+            {
+                Icon: Icon.Person,
+                Text: "Profile",
+                Output: "Profile"
+            },
+            {
+                Icon: Icon.Leave,
+                Text: "Logout",
+                Output: "Logout"
+            }
+        )
+      SidebarPadding: =12
+      SidebarPrimaryColor: =RGBA(31, 41, 55, 1)
+      SidebarPrimaryFont: =App.Theme.Font
+      SidebarSecondaryColor: =Color.White
+      Height: =App.Height
+      Width: =App.Width * 0.2
+    Children:
+    - con_sideMenu:
+        Control: GroupContainer
+        Variant: verticalAutoLayoutContainer
+        Properties:
+          ContentLanguage: ="ja-jp"
+          DropShadow: =DropShadow.None
+          Fill: =CollapsibleSidebar.SidebarPrimaryColor
+          Height: =Parent.Height
+          LayoutDirection: =LayoutDirection.Vertical
+          LayoutGap: =CollapsibleSidebar.SidebarPadding
+          LayoutMode: =LayoutMode.Auto
+          PaddingBottom: =CollapsibleSidebar.SidebarPadding
+          PaddingLeft: =CollapsibleSidebar.SidebarPadding
+          PaddingRight: =CollapsibleSidebar.SidebarPadding
+          PaddingTop: =CollapsibleSidebar.SidebarPadding
+          RadiusBottomLeft: =0
+          RadiusBottomRight: =0
+          RadiusTopLeft: =0
+          RadiusTopRight: =0
+          Width: |-
+            =// Width of the container, adjusts with sidebar expansion
+            Max(76, If(isSidebarExpanded, App.Width * 0.2, 96))
+        Children:
+        - ico_sideToggle:
+            Control: Classic/Icon
+            Properties:
+              OnSelect: |-
+                =// # Toggles the sidebar expansion state
+                Set(isSidebarExpanded, !isSidebarExpanded)
+              AccessibleLabel: ="Toggle Sidebar"
+              ContentLanguage: ="ja-jp"
+              Tooltip: ="Click to expand or collapse the sidebar"
+              Color: =CollapsibleSidebar.SidebarSecondaryColor
+              Fill: =Color.Transparent
+              FocusedBorderColor: =Color.Transparent
+              FocusedBorderThickness: =1
+              Height: =CollapsibleSidebar.SidebarIconSize
+              HoverBorderColor: =Color.Transparent
+              Icon: =Icon.Hamburger
+              PaddingBottom: =CollapsibleSidebar.SidebarPadding
+              PaddingLeft: =CollapsibleSidebar.SidebarPadding
+              PaddingRight: =CollapsibleSidebar.SidebarPadding
+              PaddingTop: =CollapsibleSidebar.SidebarPadding
+              PressedBorderColor: =Color.Transparent
+              TabIndex: =0
+              Width: =CollapsibleSidebar.SidebarIconSize
+        - gal_sideMenuItems:
+            Control: Gallery
+            Variant: customGalleryLayout
+            Properties:
+              AccessibleLabel: ="Sidebar Menu"
+              ContentLanguage: ="ja-jp"
+              ItemAccessibleLabel: =ThisItem.Text
+              Items: =CollapsibleSidebar.SidebarMenuTable
+              Fill: =Color.Transparent
+              FocusedBorderColor: =Color.Transparent
+              FocusedBorderThickness: =1
+              Layout: =Layout.Vertical
+              LayoutMinHeight: =72
+              LayoutMinWidth: =0
+              TabIndex: =0
+              TemplatePadding: =0
+              TemplateSize: =72
+            Children:
+            - itm_sideMenuItem:
+                Control: GroupContainer
+                Variant: horizontalAutoLayoutContainer
+                Properties:
+                  ContentLanguage: ="ja-jp"
+                  DropShadow: =DropShadow.None
+                  Fill: |-
+                    =// Fills the container if the item is selected
+                    If( ThisItem.IsSelected, CollapsibleSidebar.SidebarSecondaryColor, Color.Transparent )
+                  Height: =Parent.TemplateHeight
+                  LayoutGap: =CollapsibleSidebar.SidebarPadding
+                  LayoutMode: =LayoutMode.Auto
+                  PaddingLeft: =CollapsibleSidebar.SidebarPadding
+                  PaddingRight: =CollapsibleSidebar.SidebarPadding
+                  Width: =Parent.TemplateWidth
+                Children:
+                - icn_sideMenuItemIcon:
+                    Control: Classic/Icon
+                    Variant: Camera
+                    Properties:
+                      AccessibleLabel: =$"{ThisItem.Text} Icon"
+                      ContentLanguage: ="ja-jp"
+                      Tooltip: ="Menu item icon"
+                      AlignInContainer: =AlignInContainer.Center
+                      Color: |-
+                        =If(
+                            ThisItem.IsSelected,
+                            CollapsibleSidebar.SidebarPrimaryColor,
+                            CollapsibleSidebar.SidebarSecondaryColor
+                        )
+                      FocusedBorderThickness: =0
+                      Height: =CollapsibleSidebar.SidebarIconSize
+                      Icon: =ThisItem.Icon
+                      PaddingBottom: =CollapsibleSidebar.SidebarPadding
+                      PaddingLeft: =CollapsibleSidebar.SidebarPadding
+                      PaddingRight: =CollapsibleSidebar.SidebarPadding
+                      PaddingTop: =CollapsibleSidebar.SidebarPadding
+                      Width: =CollapsibleSidebar.SidebarIconSize
+                - lbl_sideMenuItemText:
+                    Control: Label
+                    Properties:
+                      ContentLanguage: ="ja-jp"
+                      Text: =ThisItem.Text
+                      Tooltip: =ThisItem.Text
+                      AlignInContainer: =AlignInContainer.Center
+                      Color: =icn_sideMenuItemIcon.Color
+                      Font: =CollapsibleSidebar.SidebarPrimaryFont
+                      Size: =13
+                      Visible: =isSidebarExpanded
+    CustomProperties:
+    - SidebarPadding:
+        Direction: Input
+        PropertyType: Data
+        DataType: Number
+        IsResettable: false
+        DisplayName: SidebarPadding
+        Description: SidebarPadding of padding
+    - SidebarIconSize:
+        Direction: Input
+        PropertyType: Data
+        DataType: Number
+        IsResettable: false
+        DisplayName: SidebarIconSize
+        Description: Size of icons
+    - SidebarMenuTable:
+        Direction: Input
+        PropertyType: Data
+        DataType: Table
+        IsResettable: false
+        DisplayName: SidebarMenuTable
+        Description: Sidebar Menu Table
+    - SidebarPrimaryColor:
+        Direction: Input
+        PropertyType: Data
+        DataType: Color
+        IsResettable: false
+        DisplayName: SidebarPrimaryColor
+        Description: Primary Color of Sidebar
+    - SidebarSecondaryColor:
+        Direction: Input
+        PropertyType: Data
+        DataType: Color
+        IsResettable: false
+        DisplayName: SidebarSecondaryColor
+        Description: Secondary Color or Sidebar
+    - SidebarPrimaryFont:
+        Direction: Input
+        PropertyType: Data
+        DataType: String
+        IsResettable: false
+        DisplayName: SidebarPrimaryFont
+        Description: Default of font
+    - SidebarWidth:
+        Direction: Output
+        PropertyType: Data
+        DataType: Number
+        IsResettable: false
+        DisplayName: SidebarWidth
+        Description: Width of sidebar
+    - SidebarSelectedText:
+        Direction: Output
+        PropertyType: Data
+        DataType: String
+        IsResettable: false
+        DisplayName: SidebarSelectedText
+        Description: Output text

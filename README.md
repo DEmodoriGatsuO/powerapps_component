@@ -8,4 +8,5 @@ This repository is dedicated to storing and managing the YAML source cord used i
 
 # Components
 
-👉 [File Uploader Component](https://github.com/DEmodoriGatsuO/powerapps_component/tree/main/components)
+- 👉 [File Uploader Component](https://github.com/DEmodoriGatsuO/powerapps_component/tree/main/components/file_upload)
+- 👉 [Collapsible Sidebar](https://github.com/DEmodoriGatsuO/powerapps_component/tree/main/components/collapsible_sidebar)
