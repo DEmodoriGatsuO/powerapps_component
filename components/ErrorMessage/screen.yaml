@@ -1,0 +1,54 @@
+- ErrorScreen:
+    Control: Screen
+    Children:
+    - btnError:
+        Control: Classic/Button
+        Properties:
+          OnSelect: |
+            =ClearCollect(
+                ErrorCollection,
+                {
+                    ErrorID: "E001",
+                    ErrorMessage: "Invalid input. Please enter a valid value."
+                },
+                {
+                    ErrorID: "E002",
+                    ErrorMessage: "Data not found. Please check the source."
+                },
+                {
+                    ErrorID: "E003",
+                    ErrorMessage: "Connection error. Please try again later."
+                },
+                {
+                    ErrorID: "E004",
+                    ErrorMessage: "Permission denied. You do not have the required access."
+                },
+                {
+                    ErrorID: "E005",
+                    ErrorMessage: "Unknown error occurred. Please contact support."
+                }
+            );
+            If(
+                CountRows(ErrorCollection) > 0,
+                UpdateContext({varVisible: true})
+            );
+          Text: ="エラーを宣言"
+          X: =580
+          Y: =78
+    - htmlTextExample:
+        Control: HtmlViewer
+        Properties:
+          OnSelect: |-
+            =UpdateContext({varVisible: false});
+          HtmlText: |
+            =$"<div style='position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.1); display: flex; justify-content: center; align-items: center;'>
+                <div style='background-color: white; color: #333; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); width: 80%; max-width: 800px; text-align: center;'>
+                    <strong>入力エラーが存在します。修正してください。</strong>
+                    <ul style='list-style-type: disc; padding-left: 20px; margin-top: 10px; text-align: left;'>
+                        {Concat(ErrorCollection,$"<li><strong>{ErrorID}: </strong>{ErrorMessage}</li>")}
+                    </ul>
+                </div>
+            </div>"
+          Height: =768
+          Visible: =varVisible
+          Width: =1366
