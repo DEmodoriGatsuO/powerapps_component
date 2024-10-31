@@ -1,0 +1,268 @@
+- ApprovalScreen:
+    Control: Screen
+    Children:
+    - HeaderContainer:
+        Control: GroupContainer
+        Variant: manualLayoutContainer
+        Properties:
+          DropShadow: =DropShadow.None
+          Height: =46
+          RadiusBottomLeft: =0
+          RadiusBottomRight: =0
+          RadiusTopLeft: =0
+          RadiusTopRight: =0
+          Width: =Parent.Width
+        Children:
+        - HtmlViewer:
+            Control: HtmlViewer
+            Properties:
+              OnSelect: =
+              HtmlText: |
+                =With(
+                    {
+                        // 共通スタイル定義
+                        commonStyle: "flex: 1; text-align: center; font-weight: bold; color: black; padding: 5px;"
+                    },
+                    // コンテナ設定とヘッダー表示
+                    $"<div style='display: flex; flex-direction: column;'>
+                        <div style='display: flex;'>
+                            <div style='{commonStyle}'>申請名称</div>
+                            <div style='{commonStyle}'>進捗区分</div>
+                            <div style='{commonStyle}'>申請者</div>
+                            <div style='{commonStyle}'>申請日</div>
+                            <div style='{commonStyle}'>区分</div>
+                            <div style='{commonStyle}'>ID</div>
+                            <div style='{commonStyle}'>現在ステータス</div>
+                            <div style='{commonStyle}'>現在担当者</div>
+                        </div>
+                    </div>"
+                )
+              DisplayMode: =DisplayMode.View
+              Height: =44
+              PaddingBottom: =0
+              PaddingLeft: =0
+              PaddingRight: =0
+              PaddingTop: =0
+              Width: =Parent.Width
+        - HeaderDivider:
+            Control: Rectangle
+            Properties:
+              DisplayMode: =DisplayMode.Disabled
+              Height: =4
+              Width: =Parent.Width
+              Y: =HtmlViewer.Height + HtmlViewer.Y
+    - RequestGallery:
+        Control: Gallery
+        Variant: galleryVertical
+        Properties:
+          Items: |-
+            =Table(
+                {
+                    ProgressCategory: "In Progress",
+                    ApplicationName: "Budget Request",
+                    Applicant: "John Doe",
+                    ApplicantDepartment: "Finance",
+                    ApplicationDate: Date(
+                        2024,
+                        10,
+                        15
+                    ),
+                    Category: "Budget",
+                    ID: "REQ-001",
+                    CurrentStatus: "Pending Approval",
+                    CurrentAssignee: "Jane Smith"
+                },
+                {
+                    ProgressCategory: "Approved",
+                    ApplicationName: "System Update",
+                    Applicant: "Emily Clark",
+                    ApplicantDepartment: "IT",
+                    ApplicationDate: Date(
+                        2024,
+                        9,
+                        20
+                    ),
+                    Category: "System",
+                    ID: "REQ-002",
+                    CurrentStatus: "Completed",
+                    CurrentAssignee: "N/A"
+                },
+                {
+                    ProgressCategory: "Rejected",
+                    ApplicationName: "Software Purchase",
+                    Applicant: "Michael Brown",
+                    ApplicantDepartment: "Marketing",
+                    ApplicationDate: Date(
+                        2024,
+                        10,
+                        1
+                    ),
+                    Category: "Purchase",
+                    ID: "REQ-003",
+                    CurrentStatus: "Rejected",
+                    CurrentAssignee: "N/A"
+                },
+                {
+                    ProgressCategory: "In Progress",
+                    ApplicationName: "New Hire Equipment",
+                    Applicant: "Sarah Green",
+                    ApplicantDepartment: "HR",
+                    ApplicationDate: Date(
+                        2024,
+                        10,
+                        10
+                    ),
+                    Category: "Equipment",
+                    ID: "REQ-004",
+                    CurrentStatus: "Pending IT Setup",
+                    CurrentAssignee: "David Lee"
+                },
+                {
+                    ProgressCategory: "Pending",
+                    ApplicationName: "Conference Approval",
+                    Applicant: "James White",
+                    ApplicantDepartment: "Sales",
+                    ApplicationDate: Date(
+                        2024,
+                        10,
+                        18
+                    ),
+                    Category: "Travel",
+                    ID: "REQ-005",
+                    CurrentStatus: "Awaiting Manager Approval",
+                    CurrentAssignee: "Tom Brown"
+                },
+                {
+                    ProgressCategory: "Completed",
+                    ApplicationName: "Office Supplies Purchase",
+                    Applicant: "Olivia Black",
+                    ApplicantDepartment: "Admin",
+                    ApplicationDate: Date(
+                        2024,
+                        9,
+                        30
+                    ),
+                    Category: "Purchase",
+                    ID: "REQ-006",
+                    CurrentStatus: "Completed",
+                    CurrentAssignee: "N/A"
+                },
+                {
+                    ProgressCategory: "Rejected",
+                    ApplicationName: "Marketing Campaign",
+                    Applicant: "Sophia King",
+                    ApplicantDepartment: "Marketing",
+                    ApplicationDate: Date(
+                        2024,
+                        10,
+                        5
+                    ),
+                    Category: "Marketing",
+                    ID: "REQ-007",
+                    CurrentStatus: "Rejected by Budget Committee",
+                    CurrentAssignee: "N/A"
+                },
+                {
+                    ProgressCategory: "Pending",
+                    ApplicationName: "Website Redesign",
+                    Applicant: "Liam Grey",
+                    ApplicantDepartment: "Design",
+                    ApplicationDate: Date(
+                        2024,
+                        9,
+                        25
+                    ),
+                    Category: "Design",
+                    ID: "REQ-008",
+                    CurrentStatus: "Pending Review",
+                    CurrentAssignee: "Anna Blue"
+                },
+                {
+                    ProgressCategory: "In Progress",
+                    ApplicationName: "Employee Training Program",
+                    Applicant: "Noah Brown",
+                    ApplicantDepartment: "Training",
+                    ApplicationDate: Date(
+                        2024,
+                        10,
+                        11
+                    ),
+                    Category: "Training",
+                    ID: "REQ-009",
+                    CurrentStatus: "Scheduled",
+                    CurrentAssignee: "Kate White"
+                },
+                {
+                    ProgressCategory: "Approved",
+                    ApplicationName: "Data Migration",
+                    Applicant: "Mia Green",
+                    ApplicantDepartment: "IT",
+                    ApplicationDate: Date(
+                        2024,
+                        8,
+                        15
+                    ),
+                    Category: "Data",
+                    ID: "REQ-010",
+                    CurrentStatus: "Completed",
+                    CurrentAssignee: "N/A"
+                },
+                {
+                    ProgressCategory: "Pending",
+                    ApplicationName: "Annual Review Preparation",
+                    Applicant: "Aiden Parker",
+                    ApplicantDepartment: "HR",
+                    ApplicationDate: Date(
+                        2024,
+                        10,
+                        20
+                    ),
+                    Category: "Review",
+                    ID: "REQ-011",
+                    CurrentStatus: "Awaiting Approval",
+                    CurrentAssignee: "N/A"
+                }
+            )
+          DelayItemLoading: =true
+          Height: =768
+          Layout: =Layout.Vertical
+          LoadingSpinner: =LoadingSpinner.Data
+          TemplatePadding: =0
+          TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(78, Self.Width - 60), Min(78, Self.Height - 60))
+          Width: =1366
+          Y: =HeaderContainer.Height + HeaderContainer.Y
+        Children:
+        - ItemDivider:
+            Control: Rectangle
+            Properties:
+              OnSelect: =Select(Parent)
+              DisplayMode: =DisplayMode.Disabled
+              Fill: =RGBA(166, 166, 166, 1)
+              Height: =0.5
+              Width: =Parent.Width
+              Y: =ItemHtmlViewer.Height + ItemHtmlViewer.Y
+        - ItemHtmlViewer:
+            Control: HtmlViewer
+            Properties:
+              OnSelect: =Select(Parent)
+              HtmlText: |-
+                =With(
+                    {
+                        // 共通スタイル定義
+                        commonStyle: "flex: 1; text-align: center; padding: 5px;"
+                    },
+                    // コンテナの設定と個別項目のスタイル適用
+                    $"<div style='display: flex; flex-wrap: wrap;'>
+                        <div style='{commonStyle}'>{ThisItem.ApplicationName}</div>
+                        <div style='{commonStyle}'>{ThisItem.ProgressCategory}</div>
+                        <div style='{commonStyle}'>{ThisItem.Applicant} ({ThisItem.ApplicantDepartment})</div>
+                        <div style='{commonStyle}'>{Text(ThisItem.ApplicationDate, "yyyy/mm/dd")}</div>
+                        <div style='{commonStyle}'>{ThisItem.Category}</div>
+                        <div style='{commonStyle}'>{ThisItem.ID}</div>
+                        <div style='{commonStyle}'>{ThisItem.CurrentStatus}</div>
+                        <div style='{commonStyle}'>{ThisItem.CurrentAssignee}</div>
+                    </div>"
+                )
+              AutoHeight: =true
+              Height: =280
+              Width: =1356
