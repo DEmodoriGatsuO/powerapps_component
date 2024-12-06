@@ -1,0 +1,41 @@
+With(
+    {
+        styles: {
+            liStyle: "padding: 10px; border-bottom: 1px solid #eee",
+            containerStyle: "display: flex; align-items: center; gap: 15px",
+            imgStyle: "width: 32px; height: 32px",
+            detailsStyle: "display: flex; flex-direction: column",
+            nameStyle: "font-weight: bold; margin-bottom: 4px; color: #0066cc; text-decoration: underline; cursor: pointer",
+            commentStyle: "color: #666; font-size: 0.9em"
+        }
+    },
+    $"<ul style='list-style: none; padding: 0; margin: 0'>
+    {
+        Concat(
+            ドキュメント As Docs,
+            $"<li style='{styles.liStyle}'>
+              <div style='{styles.containerStyle}'>
+                <img src='{$"https://static2.sharepointonline.com/files/fabric/assets/item-types/24/{Coalesce(
+                        LookUp(
+                            IconTable,
+                            Extention = 
+                            Last(
+                                Split(
+                                    Docs.拡張子付きのファイル名,
+                                    "."
+                                )
+                            ).Value
+                        ).FileType,
+                        "genericfile"
+                    )}.svg"}' style='${styles.imgStyle}'>
+                <div style='${styles.detailsStyle}'>
+                  <a href='{Docs.アイテムへのリンク}' target='_blank' style='${styles.nameStyle}'>
+                    {Docs.拡張子付きのファイル名}</a>
+                  <span style='${styles.commentStyle}'>{"コメント"}</span>
+                </div>
+              </div>
+            </li>"
+        )
+    }
+    </ul>"
+)
